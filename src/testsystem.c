@@ -229,7 +229,7 @@ void verify(sparkey_compression_type compression, int blocksize, int hashsize, i
   sparkey_logiter_close(&myiter);
 }
 
-int main() {
+int main(void) {
   verify(SPARKEY_COMPRESSION_NONE, 0, 0, 0, 0, 0);
   verify(SPARKEY_COMPRESSION_NONE, 0, 0, 1, 0, 0);
   verify(SPARKEY_COMPRESSION_NONE, 0, 0, 100, 0, 0);
